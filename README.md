@@ -1,2 +1,2 @@
 # Weather
-Django Weather Ap
+Django Weather App
