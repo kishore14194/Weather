@@ -2,10 +2,10 @@ from django.shortcuts import render
 import requests
 from weather.models import City
 from weather.forms import CityForm
+from django.conf import settings
 
-#TODO: Move to dot env
-
-WEATHER_URL='http://samples.openweathermap.org/data/2.5/weather?q={}&appid=b6907d289e10d714a6e88b30761fae22'
+# WEATHER_URL = settings.CONFIGS['SAMPLE_WEATHER_URL']
+WEATHER_URL = settings.CONFIGS['LIVE_WEATHER_URL']
 
 ON = 'on'
 OFF = 'off'
