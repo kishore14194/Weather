@@ -26,7 +26,7 @@
                             {{ form }}
                         <div class="field has-addons">
                             <div class="control is-expanded">
-                                <input class="input" type="text" name="name" placeholder="City Name" value={{ form.name }}>
+                                <input class="input" type="text" name="name" placeholder="City Name" required="required" pattern="[A-Za-z].{1,}" value={{ form.name }} >
                             </div>
                             <div class="control">
                                 <button class="button is-dark">

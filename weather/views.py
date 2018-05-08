@@ -29,7 +29,10 @@ def index(request):
 
     for city in cities:
         # TODO: HTTPConnectionPool Exception
-        city_weather = requests.get(WEATHER_URL.format(city)).json()
+        try:
+            city_weather = requests.get(WEATHER_URL.format(city)).json()
+        except:
+            continue
 
         temp_degree = city_weather['main']['temp']
 

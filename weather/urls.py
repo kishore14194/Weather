@@ -4,3 +4,4 @@ from weather import views
 urlpatterns = [
     path('', views.index)
 ]
+
