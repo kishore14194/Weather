@@ -34,6 +34,7 @@ MANIFEST
 #pycharm stuff
 .idea/
 .idea/*
+*.cpython-36.pyc
 
 # mac stuff
 
