@@ -24,9 +24,9 @@ load_dotenv(find_dotenv(), override=True)
 SECRET_KEY = '+jj6v835f313b9xgunp29cyq75growclrk3ucn1li4&s*vw1@d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
